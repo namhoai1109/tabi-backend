@@ -1,0 +1,19 @@
+version: "3"
+services:
+  db:
+    platform: linux/x86_64
+    image: postgres:13
+    container_name: tabi-notification.db
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_ROOT_PASSWORD: password
+      POSTGRES_DATABASE: notification
+      POSTGRES_USER: notification
+      POSTGRES_PASSWORD: notification123
+      TZ: UTC
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:

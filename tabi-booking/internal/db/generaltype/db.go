@@ -1,0 +1,16 @@
+package generaltype
+
+import (
+	"tabi-booking/internal/model"
+
+	dbcore "github.com/namhoai1109/tabi/core/db"
+)
+
+func NewDB() *DB {
+	return &DB{dbcore.NewDB(&model.GeneralType{})}
+}
+
+// DB represents the client for account table
+type DB struct {
+	*dbcore.DB
+}

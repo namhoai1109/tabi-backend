@@ -1,0 +1,83 @@
+{
+    "HOTEL_ACCOMMODATION": {
+        "label": "Hotel",
+        "description": "A commercial accommodation that provides private rooms with meals and guest service.",
+        "child": [
+            {
+                "label": "Serviced Apartment",
+                "description": "Furnished residential in an apartment building that provides private rooms with hotel-like services."
+            }, {
+                "label": "Bed and Breakfast",
+                "description": "Small commercial accommodation or private home that offers overnight stay with breakfast."
+            }, {
+                "label": "Capsule Hotel",
+                "description": "Small unit of capsule accommodation that offers lodging with basic overnight accommodation."
+            }, {
+                "label": "Guest House",
+                "description": "Small commercial accommodation that usually converted from a private house."
+            }, {
+                "label": "Homestay",
+                "description": "A budget accommodation where the guest has private room while sharing some shared areas with other guests."
+            }, {
+                "label": "Hostel",
+                "description": "A budget accommodation that provides lodging, usually with dorm-style beds."
+            }, {
+                "label": "Hotel",
+                "description": "A commercial accommodation that provides private rooms with meals and guest services."
+            }, {
+                "label": "Resort",
+                "description": "A complex of accommodation that offers private rooms and recreational facilities."
+            }, {
+                "label": "Riad",
+                "description": "A traditional Morrocan house or palace that offers accommodation."
+            }, {
+                "label": "Ryokan",
+                "description": "A traditional Japanese inn that offers accommodation with meals."
+            }
+        ]
+    },
+
+    "HOUSE_ACCOMMODATION": {
+        "label": "House",
+        "description": "A furnished house that offers accommodation and is rented out as an entire place.",
+        "child": [
+            {
+                "label": "Private Room",
+                "description": "Guests will only have a private room for themselves. They will need to share common room, kitchen, or bathroom with other guests/host."
+            }, {
+                "label": "Entire House",
+                "description": "Guests will have the whole place to themselves—they don't have to share facilities such as bathrooms, common rooms, and kitchen with other guests."
+            }
+        ]
+    },
+
+    "APARTMENT_ACCOMMODATION": {
+        "label": "Apartment",
+        "description": "Furnished residential that provides private rooms and located in an apartment building.",
+        "child": [
+            {
+                "label": "Private Room",
+                "description": "Guests will only have a private room for themselves. They will need to share common room, kitchen, or bathroom with other guests/host."
+            }, 
+            {
+                "label": "Entire Apartment",
+                "description": "Guests will have the whole place to themselves—they don't have to share facilities with other guests such as bathrooms, common rooms, and kitchen."
+            }
+        ]
+    },
+
+    "UNIQUE_ACCOMMODATION": {
+        "label": "Unique Accommodation",
+        "description": "A place of stay that is not common to be used as an accommodation, such as boat house, camp, and so on.",
+        "child": [
+            {
+                "label": "Campsite",
+                "description": "A place that provides lodging and usually made from temporary structures like hut, camp or tent."
+            }, 
+            {
+                "label": "Houseboat",
+                "description": "A commercial accommodation located on a boat or cruise ship."
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+version: "3"
+services:
+  db:
+    platform: linux/x86_64
+    image: postgres:13
+    container_name: tabi-booking.db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_ROOT_PASSWORD: password
+      POSTGRES_DATABASE: booking
+      POSTGRES_USER: booking
+      POSTGRES_PASSWORD: booking123
+      TZ: UTC
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:

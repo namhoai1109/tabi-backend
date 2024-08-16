@@ -1,0 +1,93 @@
+{
+    "HOTEL_ACCOMMODATION": {
+        "label": "Khách sạn",
+        "description": "Một nơi lưu trú thương mại cung cấp phòng riêng với bữa ăn và dịch vụ cho khách.",
+        "child": [
+            {
+                "label": "Căn hộ dịch vụ",
+                "description": "Căn hộ được trang bị đầy đủ trong tòa nhà chung cư cung cấp phòng riêng với dịch vụ như ở khách sạn."
+            },
+            {
+                "label": "Chỗ ở kiểu Bed and Breakfast",
+                "description": "Chỗ ở thương mại nhỏ hoặc nhà riêng cung cấp nơi nghỉ qua đêm với bữa sáng."
+            },
+            {
+                "label": "Khách sạn Capsule",
+                "description": "Đơn vị nhà nghỉ dạng cá nhân cung cấp chỗ ở cơ bản qua đêm."
+            },
+            {
+                "label": "Nhà khách",
+                "description": "Nơi lưu trú thương mại nhỏ thường được chuyển đổi từ ngôi nhà riêng."
+            },
+            {
+                "label": "Chỗ ở theo kiểu Homestay",
+                "description": "Một nơi lưu trú ngân sách nơi khách có phòng riêng nhưng phải chia sẻ một số khu vực chung với khách khác."
+            },
+            {
+                "label": "Nhà trọ",
+                "description": "Nơi lưu trú ngân sách cung cấp chỗ ở, thường là giường dạng ký túc xá."
+            },
+            {
+                "label": "Khách sạn",
+                "description": "Một nơi lưu trú thương mại cung cấp phòng riêng với bữa ăn và dịch vụ cho khách."
+            },
+            {
+                "label": "Khu nghỉ dưỡng",
+                "description": "Một quần thể nơi lưu trú cung cấp phòng riêng và các cơ sở vui chơi giải trí."
+            },
+            {
+                "label": "Riad",
+                "description": "Một ngôi nhà hoặc cung điện truyền thống ở Ma-rốc cung cấp chỗ ở."
+            },
+            {
+                "label": "Ryokan",
+                "description": "Một ký túc xá truyền thống của Nhật Bản cung cấp chỗ ở kèm theo bữa ăn."
+            }
+        ]
+    },
+
+    "HOUSE_ACCOMMODATION": {
+        "label": "Nhà",
+        "description": "Một ngôi nhà được trang bị đầy đủ cung cấp chỗ ở và được cho thuê làm toàn bộ nơi ở.",
+        "child": [
+            {
+                "label": "Phòng riêng",
+                "description": "Khách chỉ có một phòng riêng cho họ. Họ sẽ cần phải chia sẻ phòng chung, nhà bếp hoặc phòng tắm với khách khác/chủ nhà."
+            },
+            {
+                "label": "Toàn bộ ngôi nhà",
+                "description": "Khách sẽ có toàn bộ nơi ở cho riêng mình—họ không cần phải chia sẻ các tiện nghi như phòng tắm, phòng chung và nhà bếp với khách khác."
+            }
+        ]
+    },
+
+    "APARTMENT_ACCOMMODATION": {
+        "label": "Căn hộ",
+        "description": "Nơi lưu trú được trang bị đầy đủ cung cấp phòng riêng và nằm trong tòa nhà chung cư.",
+        "child": [
+            {
+                "label": "Phòng riêng",
+                "description": "Khách chỉ có một phòng riêng cho họ. Họ sẽ cần phải chia sẻ phòng chung, nhà bếp hoặc phòng tắm với khách khác/chủ nhà."
+            },
+            {
+                "label": "Toàn bộ căn hộ",
+                "description": "Khách sẽ có toàn bộ nơi ở cho riêng mình—họ không cần phải chia sẻ các tiện nghi như phòng tắm, phòng chung và nhà bếp với khách khác."
+            }
+        ]
+    },
+
+    "UNIQUE_ACCOMMODATION": {
+        "label": "Chỗ ở độc đáo",
+        "description": "Một nơi lưu trú không phổ biến như làm nơi ở như nhà trên thuyền, trại và các loại chỗ ở khác.",
+        "child": [
+            {
+                "label": "Khu cắm trại",
+                "description": "Một nơi cung cấp chỗ ở và thường được làm từ cấu trúc tạm thời như lều, trại hoặc túi ngủ."
+            },
+            {
+                "label": "Nhà trên thuyền",
+                "description": "Một nơi lưu trú thương mại nằm trên thuyền hoặc tàu du lịch."
+            }
+        ]
+    }
+}

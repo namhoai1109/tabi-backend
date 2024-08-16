@@ -1,0 +1,193 @@
+Project Tabi {
+  database_type: 'PostgreSQL'
+  Note: '''
+    # Tabi Database
+    **markdown content here**
+  '''
+}
+
+Table account as Acc {
+    id int [pk, increment]
+    username text [unique]
+    password text 
+    phone text [unique]
+    email text 
+    role text 
+    refresh_token text
+}
+
+Table representative as Rep {
+    id int [pk, increment]
+    name text 
+    account_id int [ref: - Acc.id]
+}
+
+Table branch_manager as BM {
+    id int [pk, increment]
+    name text 
+    account_id int [ref: - Acc.id]
+    representative_id int [ref: > Rep.id]
+}
+
+Table company as C {
+    id int [pk, increment]
+    company_name text 
+    short_name text 
+    description text 
+    website_url text 
+    tax_number text
+    representative_id int [ref: - Rep.id]
+}
+
+Table facility as F {
+    id int [pk, increment]
+    type text 
+    class_en text 
+    class_vi text
+    name_en text
+    name_vi text
+}
+
+Table general_type as GT {
+    id int [pk, increment]
+    class text 
+    label_en text 
+    label_vi text
+    desc_en text
+    desc_vi text 
+    order int
+}
+
+Table branch as B {
+    id int [pk, increment]
+    branch_name text 
+    address text 
+    full_address text 
+    province_city text 
+    district text 
+    ward text 
+    latitude text 
+    longitude text 
+    description text 
+    reception_area boolean 
+    main_facilities int[] [ref: <> F.id]
+    is_active boolean
+    cancellation_time_value int
+    cancellation_time_unit text
+    general_policy text
+    type_id int [ref: - GT.id]  
+    company_id int [ref: > C.id]
+    branch_manager_id int [ref: - BM.id]
+}
+
+Table room_type as RT {
+    id int [pk, increment]
+    type_name text 
+    check_in_time timestamp 
+    check_out_time timestamp 
+    include_breakfast boolean 
+    room_facilities int[] [ref: <> F.id]
+    branch_id int [ref: > B.id]
+}
+
+Table room as R {
+    id int [pk, increment]
+    room_name text 
+    status text
+    bed_type int
+    max_occupancy int 
+    width float 
+    length float 
+    max_price float 
+    quantity int 
+    room_type_id int [ref: > RT.id]
+    branch_id int [ref: > B.id]
+}
+
+Table facture_reduction as fd {
+    id int [pk, increment]
+    room_id int [ref: - R.id]
+    online_method float
+    on_cash_method float
+    normal_day float
+    holiday float
+    weekend float
+}
+
+Table reservation_reduction as rr {
+    id int [pk, increment]
+    room_id int [ref: > R.id]
+    quantity float
+    time_unit text
+    reduction float
+}
+
+Table User as U {
+    id int [pk, increment]
+    first_name text
+    last_name text
+    date_of_birth timestamp
+    account_id int [ref: - Acc.id]
+}
+
+Table booking {
+    id int [pk, increment]
+    user_id int
+    room_id int [ref: > R.id]
+    check_in_date timestamp
+    check_out_date timestamp
+    payment_method text
+    total_price float
+    status text
+    quantity int
+    reason text
+}
+
+Table survey as S {
+    id int [pk, increment]
+    user_id int [ref: - U.id]
+    place_type text
+    activities text
+    season text
+}
+
+Table file {
+    id int [pk, increment]
+    path_name text
+    file_name text
+    file_size int
+    content_type text
+    field text
+    attachment_id int
+    attachment_type text
+    sort_order int
+    full_url text
+    upload_url text
+}
+
+Table device {
+    id int [pk, increment]
+    user_id int
+    brand text
+    model text
+    os text
+    os_version text
+    push_token text
+    is_active boolean
+}
+
+Table schedule {
+    id int [pk, increment]
+    user_id int [ref: - U.id]
+    booking_id int
+    start_time timestamp
+    end_time timestamp
+    destination_id int
+    destination_name text
+    destination_category text
+    destination_location text
+    destination_website text
+    destination_image text
+    destination_opening_hours text
+    is_notified boolean
+}

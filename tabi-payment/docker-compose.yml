@@ -1,0 +1,19 @@
+version: "3"
+services:
+  db:
+    platform: linux/x86_64
+    image: postgres:13
+    container_name: tabi-payment.db
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_ROOT_PASSWORD: password
+      POSTGRES_DATABASE: payment
+      POSTGRES_USER: payment
+      POSTGRES_PASSWORD: payment123
+      TZ: UTC
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:

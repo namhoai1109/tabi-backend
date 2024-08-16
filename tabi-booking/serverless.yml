@@ -1,0 +1,71 @@
+service: tabi-booking
+
+frameworkVersion: '3'
+
+plugins:
+  - serverless-hooks-plugin
+  - serverless-prune-plugin
+
+custom:
+  host:
+    dev: j7i5ftmep1.execute-api.ap-southeast-1.amazonaws.com/dev/
+  deploymentBuckets:
+    dev: tabi-sls-bucket
+  hooks:
+    before:package:initialize:
+      - AWS_REGION=ap-southeast-1 AWS_LAMBDA_FUNCTION_NAME=${self:service}-${opt:stage, 'dev'} HOST=${self:custom.host.${opt:stage, 'dev'}, ''} make build.linux specs
+    after:deploy:finalize:
+      - make clean
+  prune:
+    automatic: true
+    includeLayers: true
+    number: 3
+
+package:
+  patterns:
+    - "!./**"
+    - ".env"
+    - "server"
+    - "swaggerui/**"
+
+provider:
+  name: aws
+  runtime: go1.x
+  profile: tabi-backend
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'ap-southeast-1'}
+  vpc:
+    subnetIds:
+      - subnet-0d79ec6d6b91e0850
+      - subnet-07e6887c495a174af
+    securityGroupIds:
+      - sg-0c98f125a66e46b7b
+  apiGateway:
+    binaryMediaTypes:
+      - "*/*"
+    shouldStartNameWithService: true
+  deploymentBucket:
+    name: ${self:custom.deploymentBuckets.${opt:stage, 'dev'}, ''}
+  iam:
+    role: arn:aws:iam::434599936010:role/lambda-api-role
+  logs:
+    restApi:
+      level: INFO
+      fullExecutionData: false
+      executionLogging: true
+      format: '{"requestTime":"$context.requestTime","requestId":"$context.requestId","apiId":"$context.apiId","resourceId":"$context.resourceId","extendedRequestId":"$context.extendedRequestId","resourcePath":"$context.resourcePath","ip":"$context.identity.sourceIp","path":"$context.path","httpMethod":"$context.httpMethod","status":$context.status,"integrationRequestId":"$context.integration.requestId","integrationLatency":$context.integrationLatency,"integrationStatus":$context.integrationStatus,"responseLatency":$context.responseLatency,"responseLength":$context.responseLength,"errorMessage":"$context.error.message","protocol":"$context.protocol"}'
+
+functions:
+  app:
+    handler: server
+    name: ${self:service}-${opt:stage, 'dev'}
+    events:
+      - http:
+          path: "/"
+          method: ANY
+          cors: true
+      - http:
+          path: "{proxy+}"
+          method: ANY
+          cors: true
+

@@ -1,0 +1,137 @@
+{
+  "Accessibility": [
+    "Accessibility Equipment",
+    "Accessible Bathroom",
+    "Accessible Path Of Travel",
+    "Braille Or Raised Signage",
+    "Roll In Shower"
+  ],
+  "Business": [
+    "Business Center",
+    "Conference Room",
+    "Secretarial Service"
+  ],
+  "Common": [
+    "Air Conditioning",
+    "Airport Transfer",
+    "Atm Or Banking",
+    "Bar",
+    "Casino",
+    "Cloakroom",
+    "Concierge",
+    "Elevator",
+    "Garden",
+    "Hair Salon",
+    "Highchairs",
+    "Laundry Service",
+    "Luggage Storage",
+    "Multilingual Staff",
+    "Newspaper In Lobby",
+    "Parking Area",
+    "Restaurant",
+    "Room Service",
+    "Smoking Area",
+    "Smoking Free",
+    "Terrace",
+    "Valet Parking",
+    "Vegetarian Meal",
+    "Wheelchair Accessible"
+  ],
+  "Connectivity": [
+    "Internet Point",
+    "Lan Internet Access",
+    "Wifi Public Area",
+    "Wifi Surcharge"
+  ],
+  "Facilities": [
+    "Beauty Salon",
+    "Carpark",
+    "Gift Shop",
+    "Hair Dryer",
+    "Safety Deposit Box",
+    "Shops"
+  ],
+  "Food & Drinks": [
+    "Barbecue Grill",
+    "Cafe",
+    "Restaurant For Breakfast",
+    "Snack Bar"
+  ],
+  "Inside Room": [
+    "Dvd Player",
+    "In Room Accessibility",
+    "In Room Safe",
+    "Kitchenette",
+    "Microwave",
+    "Television"
+  ],
+  "Nearby Amenities": [
+    "Atm Or Banking",
+    "Grocery",
+    "Supermarket"
+  ],
+  "Service": [
+    "Bellboy Service",
+    "Concierge",
+    "Doorman",
+    "Luggage Storage",
+    "Porter",
+    "Transfer Service",
+    "Valet Parking"
+  ],
+  "Sports & Recreation": [
+    "Aerobics",
+    "Bicycle Hire Service",
+    "Fitness Center",
+    "Game Room",
+    "Golf Course",
+    "Horse Riding",
+    "Mini Golf",
+    "Pool",
+    "Sauna",
+    "Spa",
+    "Sport Court",
+    "Steam Bath",
+    "Swimup Bar",
+    "Tennis"
+  ],
+  "Things To Do": [
+    "Archery",
+    "Bicycle Storage",
+    "Bocce",
+    "Bowling Alley",
+    "Darts",
+    "Diving",
+    "Entertainment Programme For Adults",
+    "Entertainment Programme For Children",
+    "Ferry Terminal Shuttle",
+    "Fishing",
+    "Golf",
+    "Jet Ski",
+    "Karaoke",
+    "Marina",
+    "Mobile",
+    "Nightclub",
+    "Pedal Boating",
+    "Sailing",
+    "Snorkeling",
+    "Steam Bath",
+    "Surfing",
+    "Theme Park Shuttle",
+    "Water Park Access",
+    "Water Sport",
+    "Windsurfing"
+  ],
+  "Transportation": [
+    "Airport Transfer",
+    "Car Hire",
+    "Ferry Terminal Shuttle",
+    "Ski Shuttle",
+    "Train Station Pickup"
+  ],
+  "Traveling With Others": [
+    "Bicycle Hire Service",
+    "Children Club",
+    "Supervised Childcare"
+  ]
+}

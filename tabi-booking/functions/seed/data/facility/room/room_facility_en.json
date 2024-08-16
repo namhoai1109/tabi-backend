@@ -1,0 +1,57 @@
+{
+  "Bathroom and Pool": [
+    "Bathtub",
+    "Shower",
+    "Heated Water",
+    "Private Bathroom",
+    "Toiletries",
+    "Shared Bathroom",
+    "Private Pool"
+  ],
+  "Entertainment": [
+    "Dvd Cd Player",
+    "Inhouse Movies",
+    "Television"
+  ],
+  "Food and Drinks": [
+    "Dinner",
+    "Breakfast",
+    "Lunch"
+  ],
+  "Room and Laundry": [
+    "In Room Safe",
+    "Mosquito Net",
+    "In Room Video Games",
+    "Refrigerator",
+    "Washing Machine",
+    "Dishwasher",
+    "Bathrobes",
+    "Hair Dryer",
+    "Microwave",
+    "Mini Bar",
+    "Coffee Tea Maker",
+    "Daily Newspaper",
+    "Clothes Dryer",
+    "Toiletries",
+    "Complimentary Bottled Water",
+    "Ironing Facilities"
+  ],
+  "Room Configuration and Access": [
+    "Separate Dining Area",
+    "Desk",
+    "Private Bathroom",
+    "Executive Lounge Access",
+    "Interconnecting Rooms Available",
+    "Kitchenette",
+    "Seating Area",
+    "Internet Access Lan Charges Apply",
+    "Internet Access Wifi Complimentary",
+    "Air Conditioning",
+    "Fan",
+    "Balcony Terrace",
+    "Internet Access Wifi Charges Apply",
+    "Internet Access Lan Complimentary",
+    "Blackout Curtains",
+    "Non Smoking Rooms"
+  ]
+}
