@@ -1,6 +1,6 @@
 # tabi-backend
 
-This repo is the collection of source codes for the backends for our final year project "Tabi" at HCMUS. The backends are built with microservices architecture and hosted on AWS Lambda.
+This repo is the collection of the backends for our final year project "Tabi" at HCMUS. The backends are built with microservices architecture and hosted on AWS Lambda.
 
 ## Technology
 
@@ -14,7 +14,7 @@ This repo is the collection of source codes for the backends for our final year 
 - Tabi-booking: The main server of our backend, contains the logic for managing bookings.
 - Tabi-file: The service to connect to S3 for file storage.
 - Tabi-notification: The service implementing a CRON job for push notifications with Firebase.
-- Tabi-payment: The service intergrating Paypal sandbox environment for executing transactions.
+- Tabi-payment: The service integrating Paypal sandbox environment for executing transactions.
 
 ## Local development
 
