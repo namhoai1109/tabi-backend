@@ -16,6 +16,14 @@ This repo is the collection of the backends for our final year project "Tabi" at
 - Tabi-notification: The service implementing a CRON job for push notifications with Firebase.
 - Tabi-payment: The service integrating Paypal sandbox environment for executing transactions.
 
+## System overview diagram
+
+![overview diagram](assets/overview-diagram.png)
+
+## AWS Architecture 
+
+![AWS architecture](assets/aws-architecture.png)
+
 ## Local development
 
 Refer to the README.md of each service on how to setup and run the server.
